@@ -40,7 +40,6 @@ const PageContent = () => {
   // on the first render of the page, it will fetch the "careful" data
   useEffect(() => {
     fetchData("careful");
-    console.log("response", response);
   }, []);
 
   if (isLoading) {

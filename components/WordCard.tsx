@@ -41,9 +41,9 @@ const WordCard: React.FC<WordCardProps> = ({ data }) => {
 
         {data.map((data) => {
           return (
-            <div className="flex flex-col gap-2 mt-2">
+            <div key={data.word} className="flex flex-col gap-2 mt-2">
               {data.meanings.map((meanings) => (
-                <div className="">
+                <div key={data.word}>
                   <h1 className="text-2xl italic text-blue-500/90 relative text-left">
                     {meanings.partOfSpeech}
                   </h1>
