@@ -48,8 +48,8 @@ const PageContent = () => {
   if (error) {
     return (
       <div className="text-center text-2xl text-neutral-800/80 p-24">
-        The word you've entered isn't in the dictionary. Try again using the
-        search bar above.
+        The word you&apos;ve entered isn&apos;t in the dictionary. Try again
+        using the search bar above.
       </div>
     );
   }
